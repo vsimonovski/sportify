@@ -1,0 +1,43 @@
+$primary-color: #e74c3c;
+$back-color: #F5F3F0;
+$font-stack: Arial, Verdana, sans-serif;
+$label-color: #f1c40f;
+$label-text-color: #fff;
+
+textarea {
+     resize: none;
+ }
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $back-color;
+    margin-bottom: 50px;
+}
+
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    color: #fff;
+    font-size: 16px!important;
+}
+
+labe.is-focused {
+    color: #fff!important;
+}
+
+.is-focused [class*=' bmd-label'], .is-focused [class^=bmd-label] {
+    color: #fff;
+}
+
+.custom-file-control, .form-control, .is-focused .custom-file-control, .is-focused .form-control {
+    background-image: #fff;
+}
+
+.input_custom {
+
+}

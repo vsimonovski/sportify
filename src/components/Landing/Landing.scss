@@ -1,0 +1,75 @@
+@import '../../assets/_variables.scss';
+
+main {
+    height: 100%;
+    background: $color_bg;
+}
+
+.landing {
+    height: 100%;
+    background: $color_bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    &__brand {
+        font-family: $font_monoton;
+        font-size: 70px;
+        text-transform: uppercase;
+        color: $color_green;
+    }
+    &__btns {
+        width: 400px;
+    }
+}
+
+.btn-a {
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size:16px;
+  font-weight: 400;
+  font-family: Arial;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+
+  &:hover { text-decoration: none; }
+
+}
+
+.btn-1 {
+  font-weight: 100;
+  margin-right: 15px;
+  svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+  }
+}
+
+.btn-1:hover {
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #fff!important;
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}

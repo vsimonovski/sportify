@@ -1,0 +1,97 @@
+@import '../../assets/_variables.scss';
+
+.vue-map-container {
+    float: left
+}
+
+.custom-file-control, .form-control, .is-focused .custom-file-control, .is-focused .form-control {
+    background-image: -webkit-linear-gradient(bottom,#fff, 2px,rgba(0,150,136,0) 0),-webkit-linear-gradient(bottom,rgba(0,0,0,.26) 1px,transparent 0);
+    background-image: linear-gradient(0deg,#fff, 2px,rgba(0,150,136,0) 0),linear-gradient(0deg,rgba(0,0,0,.26) 1px,transparent 0);
+    color: #fff;
+}
+
+label {
+    color: #fff;
+    font-size: 16px!important;
+    margin-bottom: 10px;
+}
+
+.bmd-form-group{
+    padding-top: 2.75rem;
+}
+
+label.is-focused {
+    color: #fff!important;
+}
+
+.is-focused [class*=' bmd-label'], .is-focused [class^=bmd-label] {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+select {
+    color: #fff;
+    option {
+        color: #fff;
+    }
+}
+
+.ellipsis {
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.filter {
+    height: 100%;
+    width: 30%;
+    background: #2c3e50;
+    color: #dcdcdc!important;
+    float: left;
+    padding: 30px 20px 0 20px;
+    font-family: $font_os;
+    .title {
+        font-family: $font_monoton;
+        color: $color_green;
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .wtp {
+        display: block;
+        text-align: left;
+        margin-bottom: 10px;
+        &_select {
+            width: 100%;
+        }
+    }
+    .ui {
+        color: #dcdcdc!important;
+    }
+    .select_sports {
+        width: 100%;
+        height: 20px;
+    }
+}
+#iw-container  .iw-title {
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 22px;
+   font-weight: 400;
+   padding: 10px;
+   background-color: #48b5e9;
+   color: white;
+   margin: 1px;
+   border-radius: 2px 2px 0 0; /* In accordance with the rounding of the default infowindow corners. */
+}
+
+@media screen and (max-width: 820px) {
+    .vue-map-container {
+        width: 100% !important;
+        height: 65% !important;
+    }
+    .filter {
+        width: 100%;
+    }
+}
